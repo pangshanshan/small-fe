@@ -1,0 +1,11 @@
+/*
+* @Author: Administrator
+* @Date:   2018-03-27 12:15:07
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-03-28 10:46:48
+*/
+body {
+	background:url("../../image/bg.jpg");
+	color:red;
+	font-size: 30px;
+}

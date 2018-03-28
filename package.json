@@ -1,0 +1,34 @@
+{
+  "name": "small-fe",
+  "version": "1.0.0",
+  "description": "small-fe",
+  "main": "index.js",
+  "scripts": {
+    "dev":"set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+    "dev_mac":"WEBPACK_ENV=dev webpack-dev-server --inline --port 8088",
+    "dist":"set WEBPACK_ENV=online && webpack -p",
+    "dist_mac":"WEBPACK_ENV=online webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pangshanshan/small-fe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pangshanshan/small-fe/issues"
+  },
+  "homepage": "https://github.com/pangshanshan/small-fe#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.1.0",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {}
+}
