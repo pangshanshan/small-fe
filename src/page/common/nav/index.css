@@ -1,0 +1,29 @@
+/*
+* @Author: Administrator
+* @Date:   2018-03-28 18:15:41
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-03-28 18:19:50
+*/
+.nav {
+	background: #eee;
+	height: 30px;
+	line-height: 30px;
+}
+/*用户部分*/
+.nav .user {
+	float:left;
+}
+.nav .user.login {
+	display: none;
+}
+.nav .user .link {
+	margin-right: 5px;
+}
+/*导航链接部分*/
+.nav .nav-list {
+	float: right;
+}
+.nav .nav-list li {
+	display: inline-block;
+	margin-left: 5px;
+}

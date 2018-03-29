@@ -1,0 +1,23 @@
+/*
+* @Author: Administrator
+* @Date:   2018-03-28 19:24:22
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-03-28 19:26:57
+*/
+.footer{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.footer .links{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.footer .copyright{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}

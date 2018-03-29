@@ -2,8 +2,8 @@
 <html>
 <head>
 	<!-- <meta charset="utf-8"> -->
-	<%= require('html-loader!./layout/html-head.html') %>
-	<title>登录</title>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<title><%= htmlWebpackPlugin.options.title%></title>
 </head>
 <body>
 <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>

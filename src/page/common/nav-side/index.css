@@ -1,0 +1,27 @@
+/*
+* @Author: Administrator
+* @Date:   2018-03-29 09:34:16
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-03-29 13:42:28
+*/
+/*导航主体*/
+.nav-side {
+	float:left;
+	width:130px;
+	min-height: 100px;
+}
+.nav-side .nav-item {
+	line-height: 25px;
+	font-size: 13px;	
+}
+.nav-side .nav-item .link {
+	color:#888;
+}
+.nav-side .nav-item.active .link {
+	color:#c60023;
+}
+/*右侧内容区*/
+.content.with-nav {
+	float:left;
+	width:950px;
+}
