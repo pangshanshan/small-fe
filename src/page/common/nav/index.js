@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-03-28 18:15:36
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-03-28 19:19:22
+* @Last Modified time: 2018-03-30 17:30:48
 */
 require('./index.css');
 var _sm = require('util/sm.js');
@@ -12,9 +12,9 @@ var _cart = require('service/cart-service.js');
 var nav = {
 	init:function(){
 		this.bindEvent();
-		this.loadUserInfo();
-		this.loadCartCount();
-		return this;
+        this.loadUserInfo();
+        this.loadCartCount();
+        return this;
 	},
 	bindEvent:function(){
 		// 点击登录事件
@@ -23,7 +23,7 @@ var nav = {
 		});
 		// 点击注册事件
 		$(".js-register").click(function(){
-			window.location.href = './register.html';
+			window.location.href = './user-register.html';
 		});
 		// 退出点击事件
 		$(".js-logout").click(function(){
@@ -37,17 +37,18 @@ var nav = {
 	// 加载用户信息
 	loadUserInfo:function(){
 		_user.checkLogin(function(res){
-			$(".user.not-login").hide().siblings(".user.login").show().find(".username").text(res.username);
-		},function(errMsg){
-			// do nothing
-		});
+            $('.user.not-login').hide().siblings('.user.login').show()
+                .find('.username').text(res.username);
+        }, function(errMsg){
+            // do nothing
+        });
 	},
 	// 加载购物车数量
 	loadCartCount:function(){
 		_cart.getCartCount(function(res){
-			$(".user .cart-count").text(res || 0);
-		},function(){
-			$(".user .cart-count").text(0);
+			$(".nav .cart-count").text(res || 0);
+		},function(errMsg){
+			$(".nav .cart-count").text(0);
 		});
 	}
 };

@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-03-28 13:06:30
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-03-28 18:36:25
+* @Last Modified time: 2018-03-29 18:28:01
 */
 var Hogan = require('hogan.js');	//渲染html模板
 var conf = {
@@ -79,7 +79,7 @@ var _sm = {
     },
 	// 统一登录处理
 	doLogin:function(){
-		window.location.href = './login.html?redirect='+encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect='+encodeURIComponent(window.location.href);
 	},
 	// 返回主页
 	goHome:function(){
