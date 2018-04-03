@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-03-28 16:22:38
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-03-30 18:43:11
+* @Last Modified time: 2018-04-02 17:17:21
 */
 
 /* css reset */
@@ -96,8 +96,8 @@ input[type='checkbox']{
 .loading{
     margin: 10px auto;
     display: block;
-    width: 180px;
-    height: 180px;
+    width: 65px;
+    height: 65px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background: url(../../image/icon/loading.gif) no-repeat;

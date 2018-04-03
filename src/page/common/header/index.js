@@ -2,13 +2,14 @@
 * @Author: Administrator
 * @Date:   2018-03-28 19:31:33
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-03-28 20:00:46
+* @Last Modified time: 2018-04-02 19:11:58
 */
 require('./index.css');
 var _sm = require('util/sm.js');
 
 var header = {
 	init:function(){
+		this.onLoad();
 		this.bindEvent();
 	},
 	onLoad:function(){
