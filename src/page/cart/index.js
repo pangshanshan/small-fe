@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-04-05 11:04:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-04-05 16:35:40
+* @Last Modified time: 2018-04-05 17:32:36
 */
 require('./index.css');
 require('page/common/header/index.js');
@@ -105,7 +105,7 @@ var _page = {
 				$selectedItem = $(".cart-select:checked");
 			if($selectedItem.length){
 				if(window.confirm('确定要删除选择的商品吗？')){
-					for(var i=0,len = e$slectedItem.length;i<len;i++){
+					for(var i=0,len = $selectedItem.length;i<len;i++){
 						arrProductIds.push($($selectedItem[i]).parents("tr").data("product-id"));
 					}
 					if(arrProductIds.length){
@@ -120,7 +120,7 @@ var _page = {
 		$(document).on("click",".btn-submit",function(){
 			// 总价大于0，进行提交
 			if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-				window.location.href = './confirm.html';
+				window.location.href = './order-confirm.html';
 			} else {
 				_sm.errorTips('请选择商品后再提交');
 			}
